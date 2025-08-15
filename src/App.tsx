@@ -4,7 +4,6 @@ import ProblemStatement from './components/ProblemStatement';
 import Services from './components/Services';
 import WhyWorkWithUs from './components/WhyWorkWithUs';
 import OurProcess from './components/OurProcess';
-import Testimonials from './components/Testimonials';
 import BookingSection from './components/BookingSection';
 import Footer from './components/Footer';
 import VideoBackground from './components/VideoBackground';
@@ -19,7 +18,6 @@ function App() {
         <Services />
         <WhyWorkWithUs />
         <OurProcess />
-        <Testimonials />
         <BookingSection />
         <Footer />
       </div>
