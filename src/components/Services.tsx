@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, Vibrate as Strategy, Cog, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Search className="w-12 h-12 text-oritech-red" />,
       title: "AI Process Audits",
       description: "Comprehensive analysis of your current workflows to identify automation opportunities and inefficiencies costing you money.",
       benefits: [
@@ -16,7 +15,6 @@ const Services = () => {
       ]
     },
     {
-      icon: <Strategy className="w-12 h-12 text-oritech-red" />,
       title: "AI Strategy Consulting",
       description: "Custom AI strategies aligned with your business goals, from quick wins to long-term transformation plans.",
       benefits: [
@@ -27,7 +25,6 @@ const Services = () => {
       ]
     },
     {
-      icon: <Cog className="w-12 h-12 text-oritech-red" />,
       title: "AI Implementation & Training",
       description: "End-to-end implementation of AI solutions with comprehensive team training to ensure successful adoption.",
       benefits: [
@@ -68,8 +65,7 @@ const Services = () => {
               className="bg-black bg-opacity-60 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-oritech-red transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="text-center mb-6">
-                {service.icon}
-                <h3 className="text-2xl font-bold text-white mt-4 mb-4">{service.title}</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                 <p className="text-gray-200 leading-relaxed">{service.description}</p>
               </div>
               
