@@ -1,24 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, CheckCircle } from 'lucide-react';
 
 const BookingSection = () => {
-  useEffect(() => {
-    // Load Calendly widget script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on component unmount
-      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-      if (existingScript) {
-        document.body.removeChild(existingScript);
-      }
-    };
-  }, []);
+  const openCalendly = () => {
+    window.open('https://calendly.com/selenica3/30min', '_blank');
+  };
 
   const benefits = [
     "Comprehensive AI readiness assessment",
@@ -85,33 +72,27 @@ const BookingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-white p-8 rounded-xl shadow-2xl">
+            <div className="bg-white p-8 rounded-xl shadow-2xl text-center">
               <div className="text-center mb-8">
                 <Calendar className="w-12 h-12 text-oritech-red mx-auto mb-4" />
-                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Book a call</h3>
-                <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed">Choose a time that works best for you</p>
+                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Ready to Get Started?</h3>
+                <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed mb-8">Book your free AI audit consultation today</p>
               </div>
               
               {/* Calendly inline widget begin */}
-              <div 
-                className="calendly-inline-widget" 
-                data-url="https://calendly.com/selenica3/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=010000&text_color=b80101&primary_color=c60303" 
-                style={{ minWidth: '320px', height: '700px' }}
-              ></div>
-              {/* Calendly inline widget end */}
+              {/* Schedule Call Button */}
+              <motion.button
+                onClick={openCalendly}
+                className="bg-oritech-red hover:bg-red-700 text-white font-bold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 mb-6"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Schedule a Call Now
+              </motion.button>
               
-              {/* Alternative: Direct booking button */}
-              <div className="mt-8 text-center">
-                <button 
-                  onClick={() => window.open('https://calendly.com/selenica3/30min', '_blank')}
-                  className="bg-oritech-red hover:bg-red-700 text-white font-bold button-padding rounded-lg transition-all duration-300 flex items-center gap-2 mx-auto mb-4"
-                >
-                  Open in New Tab <ArrowRight className="w-5 h-5" />
-                </button>
-                <div className="flex items-center justify-center gap-2 text-oritech-red font-semibold mt-4">
-                  <CheckCircle className="w-4 h-4" />
-                  <span className="font-bold text-base">100% Free • No Commitment Required</span>
-                </div>
+              <div className="flex items-center justify-center gap-2 text-oritech-red font-semibold">
+                <CheckCircle className="w-4 h-4" />
+                <span className="font-bold text-base">100% Free • No Commitment Required</span>
               </div>
             </div>
           </motion.div>
