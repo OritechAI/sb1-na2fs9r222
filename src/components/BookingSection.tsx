@@ -93,11 +93,13 @@ const BookingSection = () => {
               </div>
               
               {/* Calendly inline widget */}
+              {/* Calendly inline widget begin */}
               <div 
                 className="calendly-inline-widget" 
                 data-url="https://calendly.com/selenica3/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=010000&text_color=b80101&primary_color=c60303" 
                 style={{ minWidth: '320px', height: '700px' }}
               ></div>
+              {/* Calendly inline widget end */}
               
               {/* Alternative: Direct booking button */}
               <div className="mt-8 text-center">
