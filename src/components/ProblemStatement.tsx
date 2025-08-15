@@ -23,17 +23,12 @@ const ProblemStatement = () => {
           <AlertTriangle className="w-96 h-96 text-oritech-red opacity-10" />
         </div>
         
-        {/* Background Icon */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <AlertTriangle className="w-96 h-96 text-oritech-red opacity-5" />
-        </div>
-        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 relative z-10"
+          className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Hidden Inefficiencies Are <span className="text-oritech-red">Bleeding Your Business Dry</span>
