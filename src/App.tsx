@@ -12,12 +12,12 @@ import VideoBackground from './components/VideoBackground';
 
 function App() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative w-full">
       {/* Background Video */}
       <VideoBackground />
       
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         <Hero />
         <ProblemStatement />
         <Services />
