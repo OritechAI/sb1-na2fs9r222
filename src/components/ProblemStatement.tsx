@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertTriangle, TrendingDown, Clock } from 'lucide-react';
+import { TrendingDown, Clock } from 'lucide-react';
 
 const ProblemStatement = () => {
   const scrollToBooking = () => {
