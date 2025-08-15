@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Hero from './components/Hero';
 import ProblemStatement from './components/ProblemStatement';
 import Services from './components/Services';
@@ -12,12 +11,9 @@ import VideoBackground from './components/VideoBackground';
 
 function App() {
   return (
-    <div className="min-h-screen relative w-full">
-      {/* Background Video */}
+    <div className="min-h-screen relative">
       <VideoBackground />
-      
-      {/* Content */}
-      <div className="relative z-10 w-full">
+      <div className="relative z-10">
         <Hero />
         <ProblemStatement />
         <Services />

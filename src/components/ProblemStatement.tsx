@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TrendingDown, Clock, AlertTriangle } from 'lucide-react';
+import { TrendingDown, Clock, Target } from 'lucide-react';
 
 const ProblemStatement = () => {
   const scrollToBooking = () => {
@@ -11,18 +11,8 @@ const ProblemStatement = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        {/* Background Icon */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-          <AlertTriangle className="w-80 h-80 text-oritech-red opacity-20" />
-        </div>
-        
-        {/* Background Icon */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <AlertTriangle className="w-96 h-96 text-oritech-red opacity-10" />
-        </div>
-        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +42,7 @@ const ProblemStatement = () => {
             </div>
             
             <div className="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
-              <AlertTriangle className="w-8 h-8 text-oritech-red mb-4 mx-auto" />
+              <Target className="w-8 h-8 text-oritech-red mb-4 mx-auto" />
               <h3 className="text-xl font-semibold text-white mb-2">Missed Opportunities</h3>
               <p className="text-gray-300">Lack of data insights prevents optimal decision making</p>
             </div>
