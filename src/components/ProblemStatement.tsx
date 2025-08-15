@@ -4,7 +4,7 @@ import { TrendingDown, Clock, Target } from 'lucide-react';
 
 const ProblemStatement = () => {
   const openCalendly = () => {
-    window.open('https://calendly.com/selenica3/30min', '_blank');
+    window.open('https://calendly.com/selenica3/15min', '_blank');
   };
 
   return (
