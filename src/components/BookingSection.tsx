@@ -76,7 +76,7 @@ const BookingSection = () => {
               <div className="text-center mb-8">
                 <Calendar className="w-12 h-12 text-oritech-red mx-auto mb-4" />
                 <h3 className="text-2xl lg:text-3xl font-black text-white mb-4">Ready to Get Started?</h3>
-                <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed mb-8">Enough Already!</p>
+                <p className="text-white font-black text-3xl lg:text-4xl xl:text-5xl leading-tight mb-8 text-shadow-lg">Enough Already!</p>
               </div>
               
               {/* Calendly inline widget begin */}
