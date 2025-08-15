@@ -71,7 +71,7 @@ const BookingSection = () => {
             <div className="bg-white p-8 rounded-xl shadow-2xl">
               <div className="text-center mb-8">
                 <Calendar className="w-12 h-12 text-oritech-red mx-auto mb-4" />
-                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Schedule Your Free AI Audit</h3>
+                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Schedule Your Free Call</h3>
                 <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed">Choose a time that works best for you</p>
               </div>
               
