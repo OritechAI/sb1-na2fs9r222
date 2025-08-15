@@ -47,11 +47,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#case-study" className="text-gray-300 hover:text-oritech-gold transition-colors">
-                  Case Studies
-                </a>
-              </li>
-              <li>
                 <a href="#booking" className="text-gray-300 hover:text-oritech-gold transition-colors">
                   Book Free Audit
                 </a>
