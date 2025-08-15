@@ -10,7 +10,7 @@ import VideoBackground from './components/VideoBackground';
 
 function App() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative z-0">
       <VideoBackground />
       <div className="relative z-10">
         <Hero />
