@@ -54,80 +54,17 @@
 }
 
 body {
-  @apply bg-oritech-bg text-white font-poppins font-light;
+  @apply bg-oritech-black text-white;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   user-select: text;
-  /* Add top padding to prevent content from being covered by the fixed header */
-  padding-top: 80px;
 }
 
-.user-select-text {
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-}
-
-spline-viewer {
-  width: 100% !important;
-  height: 100% !important;
-  position: fixed !important;
-  top: -3% !important; /* Moved 3% upwards */
-  left: 0 !important;
-  pointer-events: auto !important;
-  z-index: 5 !important;
-}
-
-.typewriter-container {
-  position: relative;
-  z-index: 10;
-}
-
-.section-padding {
-  @apply py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
-}
-
-.pt-screen {
-  padding-top: 100vh;
-}
-
-.service-card {
-  @apply bg-oritech-gray p-6 rounded-lg transition-all duration-300 hover:translate-y-[-10px];
-}
-
-.team-card {
-  @apply bg-oritech-gray p-6 rounded-lg overflow-hidden relative;
-}
-
-.team-card::before {
-  content: '';
-  @apply absolute top-0 left-0 w-1 h-full bg-oritech-red;
-}
-
-.contact-input {
-  @apply w-full px-4 py-3 bg-oritech-gray border-0 rounded-md focus:ring-2 focus:ring-oritech-red focus:outline-none text-white;
-}
-
-.animation-visible {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
+/* Smooth scrolling */
 html {
-  scroll-behavior: smooth !important;
-}
-
-/* Enhanced smooth scrolling */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth !important;
-  }
+  scroll-behavior: smooth;
 }
 
 /* Scrollbar styling */
@@ -136,54 +73,105 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ce0005;
+  background: #E41E26;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a30004;
-}
-
-/* Ensure content doesn't block mouse events from reaching Spline */
-.spline-container {
-  pointer-events: none;
-}
-
-/* But allow interaction with actual content elements */
-.content-container * {
-  pointer-events: auto;
-}
-
-/* Animation for gradient background fallback */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Force scroll to work even when browser might prevent it */
-html, body {
-  overscroll-behavior-y: none;
+  background: #c41923;
 }
 
 /* Performance optimizations */
-.will-change-transform {
-  will-change: transform;
+* {
+  box-sizing: border-box;
 }
 
-.will-change-opacity {
-  will-change: opacity;
+img, video {
+  max-width: 100%;
+  height: auto;
 }
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Button hover effects */
+button, .btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Video background optimization */
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+/* Focus states for accessibility */
+button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Utility classes */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.backdrop-blur-custom {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Remove all the old unused styles */
 
 /* Hardware acceleration for smoother animations */
 .hw-accelerated {

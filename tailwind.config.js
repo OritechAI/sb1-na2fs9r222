@@ -13,7 +13,9 @@ export default {
       },
       colors: {
         'oritech-bg': '#1a1a1a',
-        'oritech-red': '#ce0005',
+        'oritech-red': '#E41E26',
+        'oritech-black': '#000000',
+        'oritech-gold': '#FFD700',
         'oritech-gray': '#2a2a2a',
         'oritech-light': '#f5f5f5',
         'oritech-green': '#10B981',
