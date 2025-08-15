@@ -66,6 +66,7 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
