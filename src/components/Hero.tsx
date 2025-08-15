@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const scrollToBooking = () => {
@@ -34,7 +34,7 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center">
+          <div className="flex justify-center">
             <motion.button
               onClick={scrollToBooking}
               className="bg-oritech-red hover:bg-red-700 text-white font-semibold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-105"
@@ -42,15 +42,6 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
             >
               Book Your Free AI Audit <ArrowRight className="w-5 h-5" />
-            </motion.button>
-            
-            <motion.button
-              onClick={scrollToBooking}
-              className="border-2 border-white text-white hover:bg-white hover:text-oritech-black font-semibold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Play className="w-5 h-5" /> Watch Our Process
             </motion.button>
           </div>
         </motion.div>
