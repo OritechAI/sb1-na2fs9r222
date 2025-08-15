@@ -20,20 +20,14 @@ const ProblemStatement = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="flex justify-center mb-6">
-            <AlertTriangle className="w-12 h-12 text-oritech-red" />
-          </div>
-          
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Hidden Inefficiencies Are <span className="text-oritech-red">Bleeding Your Business Dry</span>
           </h2>
-          
           <p className="text-lg text-gray-200 max-w-4xl mx-auto mb-8 leading-relaxed">
             Every day your business operates without AI optimization, you're losing money to manual processes, 
             human errors, and missed opportunities. Your competitors are already leveraging AI to reduce costs by 
             30-50% while increasing productivity. The question isn't whether you need AI—it's how quickly you can implement it.
           </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
               <TrendingDown className="w-8 h-8 text-oritech-red mb-4 mx-auto" />
@@ -53,7 +47,6 @@ const ProblemStatement = () => {
               <p className="text-gray-300">Lack of data insights prevents optimal decision making</p>
             </div>
           </div>
-          
           <motion.button
             onClick={scrollToBooking}
             className="bg-oritech-red hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg text-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
