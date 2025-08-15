@@ -3,11 +3,8 @@ import { motion } from 'framer-motion';
 import { TrendingDown, Clock, Target } from 'lucide-react';
 
 const ProblemStatement = () => {
-  const scrollToBooking = () => {
-    const bookingSection = document.getElementById('booking');
-    if (bookingSection) {
-      bookingSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/selenica3/30min', '_blank');
   };
 
   return (
@@ -48,7 +45,7 @@ const ProblemStatement = () => {
             </div>
           </div>
           <motion.button
-            onClick={scrollToBooking}
+            onClick={openCalendly}
             className="bg-oritech-red hover:bg-red-700 text-white font-bold button-padding lg:px-12 lg:py-5 rounded-lg text-xl lg:text-2xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

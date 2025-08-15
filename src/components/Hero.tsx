@@ -3,11 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToBooking = () => {
-    const bookingSection = document.getElementById('booking');
-    if (bookingSection) {
-      bookingSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/selenica3/30min', '_blank');
   };
 
   return (
@@ -36,7 +33,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex justify-center">
             <motion.button
-              onClick={scrollToBooking}
+              onClick={openCalendly}
               className="bg-oritech-red hover:bg-red-700 text-white font-semibold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

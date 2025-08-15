@@ -76,20 +76,23 @@ const BookingSection = () => {
               </div>
               
               {/* Placeholder for Calendly embed - replace with your actual Calendly URL */}
-              <div className="h-96 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                <div className="text-center">
-                  <Calendar className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <p className="text-gray-600 font-medium mb-4">
-                    Calendly booking widget will be embedded here
-                  </p>
-                  <button className="bg-oritech-red hover:bg-red-700 text-white font-bold button-padding rounded-lg transition-all duration-300 flex items-center gap-2 mx-auto">
-                    Book Your Call Now <ArrowRight className="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
+              <iframe
+                src="https://calendly.com/selenica3/30min"
+                width="100%"
+                height="400"
+                frameBorder="0"
+                title="Schedule a meeting"
+                className="rounded-lg"
+              ></iframe>
               
               {/* Alternative: Direct booking button */}
               <div className="mt-8 text-center">
+                <button 
+                  onClick={() => window.open('https://calendly.com/selenica3/30min', '_blank')}
+                  className="bg-oritech-red hover:bg-red-700 text-white font-bold button-padding rounded-lg transition-all duration-300 flex items-center gap-2 mx-auto mb-4"
+                >
+                  Open in New Tab <ArrowRight className="w-5 h-5" />
+                </button>
                 <div className="flex items-center justify-center gap-2 text-oritech-red font-semibold mt-4">
                   <CheckCircle className="w-4 h-4" />
                   <span className="font-bold text-base">100% Free • No Commitment Required</span>
