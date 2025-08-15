@@ -15,7 +15,7 @@ export default {
         'oritech-bg': '#1a1a1a',
         'oritech-red': '#E41E26',
         'oritech-black': '#000000',
-        'oritech-gold': '#FFD700', // Keep for testimonial stars
+        'oritech-gold': '#E41E26', // Changed from gold to red
         'oritech-gray': '#2a2a2a',
         'oritech-light': '#f5f5f5',
         'oritech-green': '#10B981',
