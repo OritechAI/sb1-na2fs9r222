@@ -12,21 +12,21 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 lg:mb-8 leading-tight">
             AI Consulting & Audits to{' '}
             <span className="text-oritech-red">Transform</span>{' '}
             Your Business
           </h1>
           
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed">
             We audit your processes, uncover automation opportunities, and implement 
             AI strategies that <span className="text-oritech-gold font-semibold">cut costs</span>, 
             <span className="text-oritech-gold font-semibold"> boost efficiency</span>, and 
@@ -34,10 +34,10 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center">
             <motion.button
               onClick={scrollToBooking}
-              className="bg-oritech-red hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="bg-oritech-red hover:bg-red-700 text-white font-semibold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -46,7 +46,7 @@ const Hero = () => {
             
             <motion.button
               onClick={scrollToBooking}
-              className="border-2 border-white text-white hover:bg-white hover:text-oritech-black font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 flex items-center gap-2"
+              className="border-2 border-white text-white hover:bg-white hover:text-oritech-black font-semibold px-8 py-4 lg:px-10 lg:py-5 rounded-lg text-lg lg:text-xl transition-all duration-300 flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

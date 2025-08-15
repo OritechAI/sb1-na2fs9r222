@@ -37,7 +37,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="section-spacing px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,15 +46,15 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white heading-spacing">
             Our <span className="text-oritech-red">AI Consulting</span> Services
           </h2>
-          <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
             From audit to implementation, we provide end-to-end AI solutions that deliver measurable results.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -62,18 +62,18 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-black bg-opacity-60 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-oritech-red transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-black bg-opacity-60 backdrop-blur-sm card-padding lg:p-10 rounded-xl border border-gray-700 hover:border-oritech-red transition-all duration-300 hover:transform hover:scale-105"
             >
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-                <p className="text-gray-200 leading-relaxed">{service.description}</p>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">{service.title}</h3>
+                <p className="text-gray-200 text-base lg:text-lg leading-relaxed">{service.description}</p>
               </div>
               
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {service.benefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-oritech-red mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-300">{benefit}</span>
+                    <span className="text-gray-300 text-base lg:text-lg leading-relaxed">{benefit}</span>
                   </li>
                 ))}
               </ul>
