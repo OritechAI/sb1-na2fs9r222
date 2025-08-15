@@ -66,6 +66,7 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
@@ -114,9 +115,6 @@ button, .btn {
 }
 
 html {
-  scroll-behavior: smooth !important;
-}
-
 button:hover, .btn:hover {
   transform: translateY(-2px);
 }
