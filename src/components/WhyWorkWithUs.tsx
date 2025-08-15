@@ -31,10 +31,10 @@ const WhyWorkWithUs = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white heading-spacing">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-white heading-spacing text-shadow-lg">
             Why Work With <span className="text-oritech-red">OritechAI</span>?
           </h2>
-          <p className="text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-100 font-medium max-w-4xl mx-auto leading-relaxed text-shadow">
             We don't just implement AI—we transform businesses with strategic, results-driven solutions.
           </p>
         </motion.div>
@@ -52,8 +52,8 @@ const WhyWorkWithUs = () => {
               <div className="flex justify-center mb-6 lg:mb-8">
                 {reason.icon}
               </div>
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">{reason.title}</h3>
-              <p className="text-gray-200 text-base lg:text-lg leading-relaxed">{reason.description}</p>
+              <h3 className="text-2xl lg:text-3xl font-black text-white mb-4 lg:mb-6 text-shadow">{reason.title}</h3>
+              <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed text-shadow-sm">{reason.description}</p>
             </motion.div>
           ))}
         </div>

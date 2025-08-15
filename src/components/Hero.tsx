@@ -19,18 +19,18 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 lg:mb-8 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 lg:mb-8 leading-tight text-shadow-lg">
             AI Consulting & Audits to{' '}
-            <span className="text-oritech-red">Transform</span>{' '}
+            <span className="text-oritech-red text-shadow-lg">Transform</span>{' '}
             Your Business
           </h1>
           
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-100 font-medium mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed text-shadow">
             We audit your processes, uncover automation opportunities, and implement 
-            AI strategies that <span className="text-oritech-gold font-semibold">cut costs</span>, 
-            <span className="text-oritech-gold font-semibold"> boost efficiency</span>, and 
-            <span className="text-oritech-gold font-semibold"> grow revenue</span>.
+            AI strategies that <span className="text-oritech-red font-bold text-shadow-lg">cut costs</span>, 
+            <span className="text-oritech-red font-bold text-shadow-lg"> boost efficiency</span>, and 
+            <span className="text-oritech-red font-bold text-shadow-lg"> grow revenue</span>.
           </p>
           
           {/* CTA Buttons */}

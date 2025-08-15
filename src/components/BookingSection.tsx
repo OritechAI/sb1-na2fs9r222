@@ -21,10 +21,10 @@ const BookingSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white heading-spacing">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-white heading-spacing text-shadow-lg">
             Ready to <span className="text-oritech-red">Transform Your Business</span> with AI?
           </h2>
-          <p className="text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto subheading-spacing leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-100 font-medium max-w-4xl mx-auto subheading-spacing leading-relaxed text-shadow">
             Book your free AI audit call today and discover exactly how AI can cut your costs, 
             boost efficiency, and accelerate growth.
           </p>
@@ -38,13 +38,13 @@ const BookingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-black bg-opacity-60 backdrop-blur-sm p-8 rounded-xl border border-gray-700">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-8">What You'll Get in Your Free Audit:</h3>
+            <div className="bg-black bg-opacity-80 backdrop-blur-sm p-8 rounded-xl border border-gray-600">
+              <h3 className="text-2xl lg:text-3xl font-black text-white mb-8">What You'll Get in Your Free Audit:</h3>
               <ul className="space-y-5">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-oritech-gold mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-200 text-base lg:text-lg leading-relaxed">{benefit}</span>
+                    <span className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -52,9 +52,9 @@ const BookingSection = () => {
               <div className="mt-10 p-6 lg:p-8 bg-oritech-red bg-opacity-10 rounded-lg border border-oritech-red">
                 <div className="flex items-center gap-3 mb-3">
                   <Clock className="w-5 h-5 text-oritech-gold" />
-                  <span className="font-semibold text-white text-lg lg:text-xl">15-Minute Intro Call</span>
+                  <span className="font-bold text-white text-lg lg:text-xl">15-Minute Intro Call</span>
                 </div>
-                <p className="text-gray-200 text-base lg:text-lg leading-relaxed">
+                <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed">
                   Get actionable insights you can implement immediately, even if you don't work with us.
                 </p>
               </div>
@@ -71,18 +71,18 @@ const BookingSection = () => {
             <div className="bg-white p-8 rounded-xl shadow-2xl">
               <div className="text-center mb-8">
                 <Calendar className="w-12 h-12 text-oritech-red mx-auto mb-4" />
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Schedule Your Free AI Audit</h3>
-                <p className="text-gray-600 text-base lg:text-lg leading-relaxed">Choose a time that works best for you</p>
+                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Schedule Your Free AI Audit</h3>
+                <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed">Choose a time that works best for you</p>
               </div>
               
               {/* Placeholder for Calendly embed - replace with your actual Calendly URL */}
               <div className="h-96 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
                 <div className="text-center">
                   <Calendar className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-600 font-medium mb-4">
                     Calendly booking widget will be embedded here
                   </p>
-                  <button className="bg-oritech-red hover:bg-red-700 text-white font-semibold button-padding rounded-lg transition-all duration-300 flex items-center gap-2 mx-auto">
+                  <button className="bg-oritech-red hover:bg-red-700 text-white font-bold button-padding rounded-lg transition-all duration-300 flex items-center gap-2 mx-auto">
                     Book Your Call Now <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
@@ -92,7 +92,7 @@ const BookingSection = () => {
               <div className="mt-8 text-center">
                 <div className="flex items-center justify-center gap-2 text-oritech-red font-semibold mt-4">
                   <CheckCircle className="w-4 h-4" />
-                  <span className="text-base">100% Free • No Commitment Required</span>
+                  <span className="font-bold text-base">100% Free • No Commitment Required</span>
                 </div>
               </div>
             </div>
