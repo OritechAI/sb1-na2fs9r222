@@ -92,7 +92,6 @@ const BookingSection = () => {
                 <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed">Choose a time that works best for you</p>
               </div>
               
-              {/* Calendly inline widget */}
               {/* Calendly inline widget begin */}
               <div 
                 className="calendly-inline-widget" 
