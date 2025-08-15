@@ -5,17 +5,17 @@ import { Trophy, Users, Wrench } from 'lucide-react';
 const WhyWorkWithUs = () => {
   const reasons = [
     {
-      icon: <Trophy className="w-12 h-12 text-oritech-gold" />,
+      icon: <Trophy className="w-12 h-12 text-oritech-red" />,
       title: "Proven Results",
       description: "Our AI implementations have delivered an average of 35% cost reduction and 50% efficiency gains for our clients."
     },
     {
-      icon: <Users className="w-12 h-12 text-oritech-gold" />,
+      icon: <Users className="w-12 h-12 text-oritech-red" />,
       title: "Industry Experience", 
       description: "Over 5 years of AI consulting experience across manufacturing, healthcare, finance, and e-commerce sectors."
     },
     {
-      icon: <Wrench className="w-12 h-12 text-oritech-gold" />,
+      icon: <Wrench className="w-12 h-12 text-oritech-red" />,
       title: "End-to-End Support",
       description: "From initial audit to full implementation and ongoing optimization—we're with you every step of the way."
     }

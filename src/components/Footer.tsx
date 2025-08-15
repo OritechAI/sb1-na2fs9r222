@@ -64,15 +64,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Get In Touch</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-oritech-gold" />
+                <Mail className="w-5 h-5 text-oritech-red" />
                 <span className="text-gray-300">info@oritechai.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-oritech-gold" />
+                <Phone className="w-5 h-5 text-oritech-red" />
                 <span className="text-gray-300">+1 (407) 406-9101</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-oritech-gold" />
+                <MapPin className="w-5 h-5 text-oritech-red" />
                 <span className="text-gray-300">San Francisco, CA • Tirana, Albania</span>
               </div>
             </div>

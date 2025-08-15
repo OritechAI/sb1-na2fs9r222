@@ -5,22 +5,22 @@ import { TrendingUp, DollarSign, Clock, Users } from 'lucide-react';
 const CaseStudy = () => {
   const metrics = [
     {
-      icon: <DollarSign className="w-8 h-8 text-oritech-gold" />,
+      icon: <DollarSign className="w-8 h-8 text-oritech-red" />,
       value: "30%",
       label: "Cost Reduction"
     },
     {
-      icon: <TrendingUp className="w-8 h-8 text-oritech-gold" />,
+      icon: <TrendingUp className="w-8 h-8 text-oritech-red" />,
       value: "18%", 
       label: "Lead Conversion Boost"
     },
     {
-      icon: <Clock className="w-8 h-8 text-oritech-gold" />,
+      icon: <Clock className="w-8 h-8 text-oritech-red" />,
       value: "60%",
       label: "Time Savings"
     },
     {
-      icon: <Users className="w-8 h-8 text-oritech-gold" />,
+      icon: <Users className="w-8 h-8 text-oritech-red" />,
       value: "45%",
       label: "Team Productivity"
     }
@@ -56,17 +56,17 @@ const CaseStudy = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Manufacturing Company Transformation</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-oritech-gold mb-2">Challenge:</h4>
+                  <h4 className="text-lg font-semibold text-oritech-red mb-2">Challenge:</h4>
                   <p className="text-gray-200">Manual inventory management, inefficient quality control, and high labor costs were impacting profitability.</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-oritech-gold mb-2">Solution:</h4>
+                  <h4 className="text-lg font-semibold text-oritech-red mb-2">Solution:</h4>
                   <p className="text-gray-200">Implemented AI-powered inventory optimization, automated quality control systems, and predictive maintenance scheduling.</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-oritech-gold mb-2">Timeline:</h4>
+                  <h4 className="text-lg font-semibold text-oritech-red mb-2">Timeline:</h4>
                   <p className="text-gray-200">Full implementation completed in 3 months with immediate ROI visible within 6 weeks.</p>
                 </div>
               </div>

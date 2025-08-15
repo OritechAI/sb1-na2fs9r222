@@ -5,7 +5,7 @@ import { Search, Vibrate as Strategy, Cog, CheckCircle } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      icon: <Search className="w-12 h-12 text-oritech-gold" />,
+      icon: <Search className="w-12 h-12 text-oritech-red" />,
       title: "AI Process Audits",
       description: "Comprehensive analysis of your current workflows to identify automation opportunities and inefficiencies costing you money.",
       benefits: [
@@ -16,7 +16,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <Strategy className="w-12 h-12 text-oritech-gold" />,
+      icon: <Strategy className="w-12 h-12 text-oritech-red" />,
       title: "AI Strategy Consulting",
       description: "Custom AI strategies aligned with your business goals, from quick wins to long-term transformation plans.",
       benefits: [
@@ -27,7 +27,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <Cog className="w-12 h-12 text-oritech-gold" />,
+      icon: <Cog className="w-12 h-12 text-oritech-red" />,
       title: "AI Implementation & Training",
       description: "End-to-end implementation of AI solutions with comprehensive team training to ensure successful adoption.",
       benefits: [
@@ -76,7 +76,7 @@ const Services = () => {
               <ul className="space-y-3">
                 {service.benefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-oritech-gold mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-oritech-red mt-0.5 flex-shrink-0" />
                     <span className="text-gray-300">{benefit}</span>
                   </li>
                 ))}

@@ -53,18 +53,6 @@ const Hero = () => {
               <Play className="w-5 h-5" /> Watch Our Process
             </motion.button>
           </div>
-          
-          {/* Trust Indicators */}
-          <div className="mt-12 text-gray-300">
-            <p className="text-sm mb-4">Trusted by 50+ businesses worldwide</p>
-            <div className="flex justify-center items-center space-x-8 opacity-60">
-              <div className="text-2xl font-bold">AI</div>
-              <div className="w-2 h-2 bg-oritech-gold rounded-full"></div>
-              <div className="text-2xl font-bold">CONSULTING</div>
-              <div className="w-2 h-2 bg-oritech-gold rounded-full"></div>
-              <div className="text-2xl font-bold">EXPERTS</div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

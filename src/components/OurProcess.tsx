@@ -5,22 +5,22 @@ import { Search, FileText, Cog, TrendingUp } from 'lucide-react';
 const OurProcess = () => {
   const steps = [
     {
-      icon: <Search className="w-12 h-12 text-oritech-gold" />,
+      icon: <Search className="w-12 h-12 text-oritech-red" />,
       title: "Audit",
       description: "Comprehensive analysis of your current processes to identify AI opportunities and efficiency gaps."
     },
     {
-      icon: <FileText className="w-12 h-12 text-oritech-gold" />,
+      icon: <FileText className="w-12 h-12 text-oritech-red" />,
       title: "Plan", 
       description: "Create a detailed AI implementation roadmap with ROI projections and timeline milestones."
     },
     {
-      icon: <Cog className="w-12 h-12 text-oritech-gold" />,
+      icon: <Cog className="w-12 h-12 text-oritech-red" />,
       title: "Implement",
       description: "Deploy AI solutions with minimal business disruption and comprehensive team training."
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-oritech-gold" />,
+      icon: <TrendingUp className="w-12 h-12 text-oritech-red" />,
       title: "Optimize",
       description: "Monitor performance, make data-driven improvements, and scale successful implementations."
     }
@@ -55,11 +55,12 @@ const OurProcess = () => {
               className="text-center relative"
             >
               {/* Step Number */}
-              <div className="absolute -top-4 -left-4 bg-oritech-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
-                {index + 1}
-              </div>
-              
               <div className="bg-black bg-opacity-60 backdrop-blur-sm p-8 rounded-xl border border-gray-700 h-full">
+                {/* Step Number inside the box */}
+                <div className="absolute top-4 left-4 bg-oritech-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                  {index + 1}
+                </div>
+                
                 <div className="flex justify-center mb-4">
                   {step.icon}
                 </div>
@@ -70,8 +71,8 @@ const OurProcess = () => {
               {/* Arrow connector (not on last item) */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                  <div className="w-8 h-0.5 bg-oritech-gold"></div>
-                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-oritech-gold border-y-2 border-y-transparent"></div>
+                  <div className="w-8 h-0.5 bg-oritech-red"></div>
+                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-oritech-red border-y-2 border-y-transparent"></div>
                 </div>
               )}
             </motion.div>

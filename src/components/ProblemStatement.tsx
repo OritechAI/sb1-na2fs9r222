@@ -56,7 +56,7 @@ const ProblemStatement = () => {
           
           <motion.button
             onClick={scrollToBooking}
-            className="bg-oritech-gold hover:bg-yellow-500 text-oritech-black font-bold px-10 py-4 rounded-lg text-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+            className="bg-oritech-red hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg text-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
