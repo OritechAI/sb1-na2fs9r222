@@ -72,11 +72,11 @@ const BookingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-white p-8 rounded-xl shadow-2xl text-center">
+            <div className="bg-black bg-opacity-80 backdrop-blur-sm p-8 rounded-xl border border-gray-600 text-center">
               <div className="text-center mb-8">
                 <Calendar className="w-12 h-12 text-oritech-red mx-auto mb-4" />
-                <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4">Ready to Get Started?</h3>
-                <p className="text-gray-700 font-medium text-base lg:text-lg leading-relaxed mb-8">Enough Already!</p>
+                <h3 className="text-2xl lg:text-3xl font-black text-white mb-4">Ready to Get Started?</h3>
+                <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed mb-8">Enough Already!</p>
               </div>
               
               {/* Calendly inline widget begin */}
