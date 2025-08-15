@@ -9,7 +9,7 @@ const VideoBackground = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover blur-sm"
         preload="metadata"
       >
         <source src="/Robot Website.mp4" type="video/mp4" />
