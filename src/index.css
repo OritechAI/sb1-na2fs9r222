@@ -114,7 +114,10 @@ button, .btn {
   cursor: pointer;
 }
 
-html {
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
 button:hover, .btn:hover {
   transform: translateY(-2px);
 }
