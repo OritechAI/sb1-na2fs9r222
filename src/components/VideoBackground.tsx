@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoBackground = () => {
   return (
-    <div className="fixed inset-0 w-full h-full z-0 overflow-hidden">
+    <div className="fixed inset-0 w-full h-full -z-10 overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -16,7 +16,7 @@ const VideoBackground = () => {
       </video>
       
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 -z-10"></div>
     </div>
   );
 };

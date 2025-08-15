@@ -1,25 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 
 const BookingSection = () => {
-  useEffect(() => {
-    // Load Calendly widget script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on component unmount
-      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-      if (existingScript) {
-        document.body.removeChild(existingScript);
-      }
-    };
-  }, []);
-
   const benefits = [
     "Comprehensive AI readiness assessment",
     "Custom automation opportunity analysis", 
@@ -93,11 +76,12 @@ const BookingSection = () => {
               </div>
               
               {/* Calendly inline widget begin */}
-              <div 
-                className="calendly-inline-widget" 
-                data-url="https://calendly.com/selenica3/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=010000&text_color=b80101&primary_color=c60303" 
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/selenica3/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=010000&text_color=b80101&primary_color=c60303"
                 style={{ minWidth: '320px', height: '700px' }}
-              ></div>
+              >
+              </div>
               {/* Calendly inline widget end */}
               
               {/* Alternative: Direct booking button */}
