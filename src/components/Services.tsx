@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, Strategy, Cog, CheckCircle } from 'lucide-react';
+import { Search, Vibrate as Strategy, Cog, CheckCircle } from 'lucide-react';
 
 const Services = () => {
   const services = [
