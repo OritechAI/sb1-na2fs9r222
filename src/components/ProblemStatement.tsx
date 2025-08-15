@@ -14,6 +14,11 @@ const ProblemStatement = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-6xl mx-auto">
         {/* Background Icon */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+          <AlertTriangle className="w-80 h-80 text-oritech-red opacity-20" />
+        </div>
+        
+        {/* Background Icon */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <AlertTriangle className="w-96 h-96 text-oritech-red opacity-10" />
         </div>
