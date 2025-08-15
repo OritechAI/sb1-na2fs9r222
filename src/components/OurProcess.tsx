@@ -27,24 +27,24 @@ const OurProcess = () => {
   ];
 
   return (
-    <section id="process" className="section-spacing px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section id="process" className="section-spacing">
+      <div className="text-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center"
         >
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-white heading-spacing text-shadow-lg">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-black text-white heading-spacing text-shadow-lg">
             Our <span className="text-oritech-red">Proven</span> Process
           </h2>
-          <p className="text-lg lg:text-xl text-gray-100 font-medium max-w-4xl mx-auto leading-relaxed text-shadow">
+          <p className="text-base lg:text-lg text-gray-100 font-medium max-w-4xl mx-auto subheading-spacing text-shadow">
             A systematic approach to AI transformation that ensures success at every stage.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mt-12">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -61,11 +61,11 @@ const OurProcess = () => {
                   {index + 1}
                 </div>
                 
-                <div className="flex justify-center mb-4 lg:mb-6">
+                <div className="flex justify-center mb-4">
                   {step.icon}
                 </div>
-                <h3 className="text-xl lg:text-2xl font-black text-white mb-4 lg:mb-6">{step.title}</h3>
-                <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed">{step.description}</p>
+                <h3 className="text-lg lg:text-xl font-black text-white mb-4">{step.title}</h3>
+                <p className="text-sm lg:text-base text-gray-100 font-medium">{step.description}</p>
               </div>
               
               {/* Arrow connector (not on last item) */}

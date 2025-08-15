@@ -22,24 +22,24 @@ const WhyWorkWithUs = () => {
   ];
 
   return (
-    <section className="section-spacing px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section className="section-spacing">
+      <div className="text-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center"
         >
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-white heading-spacing text-shadow-lg">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-black text-white heading-spacing text-shadow-lg">
             Why Work With <span className="text-oritech-red">OritechAI</span>?
           </h2>
-          <p className="text-lg lg:text-xl text-gray-100 font-medium max-w-4xl mx-auto leading-relaxed text-shadow">
+          <p className="text-base lg:text-lg text-gray-100 font-medium max-w-4xl mx-auto subheading-spacing text-shadow">
             We don't just implement AI—we transform businesses with strategic, results-driven solutions.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mt-12">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -47,13 +47,13 @@ const WhyWorkWithUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="text-center card-padding lg:p-10"
+              className="text-center card-padding"
             >
-              <div className="flex justify-center mb-6 lg:mb-8">
+              <div className="flex justify-center mb-6">
                 {reason.icon}
               </div>
-              <h3 className="text-2xl lg:text-3xl font-black text-white mb-4 lg:mb-6 text-shadow">{reason.title}</h3>
-              <p className="text-gray-100 font-medium text-base lg:text-lg leading-relaxed text-shadow-sm">{reason.description}</p>
+              <h3 className="text-lg lg:text-xl font-black text-white mb-4 text-shadow">{reason.title}</h3>
+              <p className="text-sm lg:text-base text-gray-100 font-medium text-shadow-sm">{reason.description}</p>
             </motion.div>
           ))}
         </div>
